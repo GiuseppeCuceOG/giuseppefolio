@@ -1,0 +1,26 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import 'hammerjs';
+import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+import { TrackingArrowDirective } from './directives/tracking-arrow.directive';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ProfileComponent,
+    TrackingArrowDirective
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    FlexLayoutModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

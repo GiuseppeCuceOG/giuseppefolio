@@ -1,0 +1,73 @@
+.profile {
+	cursor: none;
+	background-image: linear-gradient(105deg, #2cc6b9, #fd482c);
+	background-size: 300% 300%;
+	width: 15em;
+	height: 100vh;
+	position: relative;
+	margin-left: 2em;
+	padding: 0;
+	animation: profileGround 10s ease infinite;
+
+	@keyframes profileGround {
+		0% {
+			background-position: 0% 84%;
+		}
+		50% {
+			background-position: 100% 17%;
+		}
+		100% {
+			background-position: 0% 84%;
+		}
+	}
+
+	&:hover {
+		.profile-tracking {
+			display: block;
+		}
+	}
+
+	&-info {
+
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 2em;
+
+		&-image {
+			width: 10em;
+			display: block;
+  			margin-right: auto;
+  			margin-left: auto;
+			border-radius: 50%;
+			border: .5em solid #131313;
+		}
+
+		&-textcentered {
+			text-align: center;
+		}
+	}
+
+	&-tracking {
+		display: none;
+		width: 3em;
+		position: absolute;
+	}
+}
+
+/*
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+*/
