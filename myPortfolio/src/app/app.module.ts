@@ -6,13 +6,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { TrackingArrowDirective } from './directives/tracking-arrow.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    TrackingArrowDirective
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

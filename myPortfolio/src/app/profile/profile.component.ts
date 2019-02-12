@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core'; 
+import { Component, OnInit, AfterViewInit, ViewChild, HostListener } from '@angular/core'; 
 
 @Component({
   selector: 'app-profile',
@@ -7,17 +7,39 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 })
 export class ProfileComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('trackingStar') st;
-
+  @ViewChild('cursor') cursor; 
+  @ViewChild('cursorOne') cursorOne;  
+  @ViewChild('cursorTwo') cursorTwo;  
+  x: number;
+  y: number;
+  pos;
+ 
   constructor() { }
 
   ngOnInit() {
   }
 
   ngAfterViewInit() {
-  	let star = this.st.nativeElement;
-  	star.style.position = "absolute";
-  	star.style.top = "0px";
+  	this.cursor.nativeElement.style.position = "absolute";
+  	this.cursor.nativeElement.style.display = "none";
+  	this.cursorOne.nativeElement.style.position = "absolute";
+  	this.cursorOne.nativeElement.style.display = "none";
+  	this.cursorTwo.nativeElement.style.position = "absolute";
+  	this.cursorTwo.nativeElement.style.display = "none";
   }
 
+  @HostListener('mousemove') trackCursor() {
+  	this.pos = window.event;
+  	this.x = this.pos.pageX;
+  	this.y = this.pos.pageY;
+  	this.cursor.nativeElement.style.display = "block";
+  	this.cursor.nativeElement.style.top = (this.y - 12) + "px";
+  	this.cursor.nativeElement.style.left = (this.x - 46) + "px";
+  	this.cursorOne.nativeElement.style.display = "block";
+  	this.cursorOne.nativeElement.style.top = (this.y - 19) + "px";
+  	this.cursorOne.nativeElement.style.left = (this.x - 53) + "px";
+  	this.cursorTwo.nativeElement.style.display = "block";
+  	this.cursorTwo.nativeElement.style.top = (this.y - 7) + "px";
+  	this.cursorTwo.nativeElement.style.left = (this.x - 40) + "px";
+  }
 }
