@@ -1,12 +1,12 @@
 .profile {
-	background-image: linear-gradient(105deg, #2cc6d9, #dda82c);
+	background-image: linear-gradient(105deg, #2cc6d9, #dd782c);
 	background-size: 300% 300%;
 	width: 15em;
 	height: 100vh;
 	position: relative;
 	margin-left: 2em;
 	padding: 0;
-	animation: profileGround 10s ease infinite;
+	animation: profileGround 8s ease infinite;
 
 	@keyframes profileGround {
 		0% {
@@ -17,12 +17,6 @@
 		}
 		100% {
 			background-position: 0% 84%;
-		}
-	}
-
-	&:hover {
-		.profile-tracking {
-			display: block;
 		}
 	}
 
@@ -38,36 +32,50 @@
   			margin-right: auto;
   			margin-left: auto;
 			border-radius: 50%;
+			filter: sepia(200%) blur(8px);
 			border: .5em solid #131313;
+			transition: filter .8s;
+
+			&:hover {
+				filter: sepia(0%) blur(0px);
+			}
 		}
 
 		&-textcentered {
 			text-align: center;
+			color: transparent;
+			text-shadow: 0px 0px 7px #111;
 		}
 	}
 
-	&-cursor {
+	&-cursorList {
 		width: 20px;
 		height: 20px;
-		z-index: 100;
 		pointer-events: none;
+	}
+
+	&-cursor {
+		width: 18px;
+		height: 18px;
+		z-index: 100;
 		border-radius: 50%;
-  		border: 3px solid transparent;	
-  		border-top-color: blue;
-  		border-right-color: blue;
-  		animation: rotate 8s linear infinite reverse;	
+  		border: 1px solid transparent;	
+  		border-bottom-color: #f54403;
+  		border-left-color: #f54403;
+  		animation: rotate 2s linear infinite reverse;	
 	}
 
 	&-cursorOne {
-		width: 25px;
-		height: 25px;
+		width: 22px;
+		height: 22px;
 		z-index: 99;
-		border: 8px solid transparent;
-		border-bottom-color: #5688ea;
-		border-left-color: #5688ea;
+		border: 4px solid transparent;
+		border-bottom-color: #f80945;
+		border-left-color: #f80945;
 		border-radius: 50%;
 		opacity: .5;
-		animation: rotate 7s linear infinite;
+		animation: rotate 4s infinite;
+		animation-timing-function: cubic-bezier(0.1,0.9,1,0.8);
 	}
 
 	&-cursorTwo {
@@ -75,12 +83,37 @@
 		height: 12px;
 		z-index: 98;
 		border: 2px solid transparent;
-		border-bottom-color: #56f8ea;
-		border-right-color: #56f8ea;
+		border-bottom-color: #ff1528;
+		border-right-color: #ff1528;
 		border-radius: 50%;
-		opacity: .5;
-		animation: rotate 14s linear infinite;
+		opacity: .2;
+		animation: rotate 4s linear infinite alternate;
 	}
+
+	&-cursorThree {
+		width: 34px;
+		height: 34px;
+		z-index: 97;
+		border: 2px solid transparent;
+		border-bottom-color: #f71f00;
+		border-left-color: #f71f00;
+		border-radius: 50%;
+		opacity: .8;
+		animation: rotate 3s ease-in-out infinite reverse;
+	}	
+}
+
+.speedUp {
+	animation: rotateFast .2s linear infinite;
+	animation-delay: -1s;
+}
+
+.speedUpReverse {
+	animation: rotateFast .4s ease-out infinite reverse;
+}
+
+.expand {
+	animation: expand 2s ease-out;
 }
 
 @keyframes rotate {
@@ -89,5 +122,34 @@
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes expand {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes rotateFast {
+	0% {
+		transform: rotate(0deg);
+		border-bottom-color: #f71f00;
+		border-left-color: #f71f00;
+	}
+	50% {
+		border-bottom-color: #fb5;
+		border-left-color: #fb5;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-bottom-color: #f71f00;
+		border-left-color: #f71f00;
 	}
 }
