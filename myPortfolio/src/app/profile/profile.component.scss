@@ -3,7 +3,7 @@
 	background-size: 300% 300%;
 	width: 15em;
 	height: 100vh;
-	position: relative;
+	position: fixed;
 	margin-left: 2em;
 	padding: 0;
 	animation: profileGround 8s ease infinite;
@@ -32,7 +32,7 @@
   			margin-right: auto;
   			margin-left: auto;
 			border-radius: 50%;
-			filter: sepia(200%) blur(8px);
+			filter: sepia(80%);
 			border: .5em solid #131313;
 			transition: filter .8s;
 
@@ -43,9 +43,17 @@
 
 		&-textcentered {
 			text-align: center;
-			color: transparent;
-			text-shadow: 0px 0px 7px #111;
 		}
+	}
+
+	&-links {
+		&-toPage {
+			text-decoration: none;
+
+			&:hover {
+				cursor: none;
+			}
+		}	
 	}
 
 	&-cursorList {
