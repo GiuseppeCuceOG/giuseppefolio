@@ -1,5 +1,14 @@
 .works {
-	margin: 0;
-	margin-left: 19em;
+	padding-right: 2em;
+	margin-left: 17em;
 	color: #eee;
+
+	&-list {
+
+		height: 100px;
+
+		img {
+			width: 80%;
+		}
+	}
 }

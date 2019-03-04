@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, OnInit, AfterViewInit, ViewChild, HostListener } from '@angular/core'; 
+
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  selector: 'app-cursor',
+  templateUrl: './cursor.component.html',
+  styleUrls: ['./cursor.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class CursorComponent implements OnInit, AfterViewInit {
 
-  /*@ViewChild('cursorList') cursorList;
+  @ViewChild('cursorList') cursorList;
   @ViewChild('cursor') cursor; 
   @ViewChild('cursorOne') cursorOne;  
   @ViewChild('cursorTwo') cursorTwo;
-  @ViewChild('cursorThree') cursorThree; */
+  @ViewChild('cursorThree') cursorThree;  
   x: number;
   y: number;
   pos;
@@ -21,7 +22,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*ngAfterViewInit() {
+  ngAfterViewInit() {
   	this.cursor.nativeElement.style.position = "absolute";
   	this.cursor.nativeElement.style.display = "none";
   	this.cursorOne.nativeElement.style.position = "absolute";
@@ -50,7 +51,7 @@ export class ProfileComponent implements OnInit {
   	this.cursorThree.nativeElement.style.marginTop = "-9px";
   	this.cursorList.nativeElement.style.display = "block";
   	this.cursorList.nativeElement.style.top = (this.y - 10) + "px";
-  	this.cursorList.nativeElement.style.left = (this.x - 41) + "px";
+  	this.cursorList.nativeElement.style.left = (this.x - 10) + "px";
   }
 
   @HostListener('click') speedUp() {
@@ -64,5 +65,6 @@ export class ProfileComponent implements OnInit {
 	  	this.cursorTwo.nativeElement.classList.remove('expand');
 	  	this.cursorThree.nativeElement.classList.remove('speedUp');
   	}, 400)
-  }*/
+  }
+
 }
