@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoService } from '../services/info.service';
+import { Info } from '../shared/info';
 
 @Component({
   selector: 'app-works',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
-  constructor() { }
+  info: Info[];
+
+  constructor(private infoService: InfoService) { }
 
   ngOnInit() {
+  	this.info = this.infoService.getInfo();
   }
 
 }

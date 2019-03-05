@@ -1,5 +1,11 @@
 <div class="works">
-	<div class="works-list">
-		<img src="../../assets/images/image1.png" >
+	<div class="works-list" *ngFor="let i of info">
+		<div class="works-list-information">
+			<h3 class="works-list-information-title">{{i.title}}</h3>
+			<p class="works-list-information-description">{{i.description}}</p>
+			<p class="works-list-information-tech">{{i.technologies}}</p>
+			<p class="works-list-information-company">{{i.company}}</p>
+		</div>
+		<img class="works-list-image" src="{{i.image}}" >
 	</div>
 </div>

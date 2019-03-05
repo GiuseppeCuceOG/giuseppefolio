@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CursorComponent } from './cursor/cursor.component';
+import { InfoService } from './services/info.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CursorComponent } from './cursor/cursor.component';
     AppRoutingModule,
     MatGridListModule
   ],
-  providers: [],
+  providers: [InfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
