@@ -4,4 +4,5 @@ export class Info {
 	description: string;
 	company: string;
 	technologies: string;
+	link: string;
 }
