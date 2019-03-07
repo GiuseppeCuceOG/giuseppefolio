@@ -1,11 +1,12 @@
 <div class="works">
 	<div class="works-list" *ngFor="let i of info">
-		<div class="works-list-information">
-			<h3 class="works-list-information-title">{{i.title}}</h3>
-			<p class="works-list-information-description">{{i.description}}</p>
-			<p class="works-list-information-tech">{{i.technologies}}</p>
-			<p class="works-list-information-company">{{i.company}}</p>
+		<div class="works-list-information {{i.image}}">
+			<div class="works-list-information-text">
+				<h3 class="works-list-information-text-title">{{i.title}}</h3>
+				<p class="works-list-information-text-description">{{i.description}}</p>
+				<p class="works-list-information-text-tech">Technologies: {{i.technologies}}</p>
+				<p class="works-list-information-text-company">Company: {{i.company}}</p>
+			</div>
 		</div>
-		<img class="works-list-image" src="{{i.image}}" >
 	</div>
 </div>
