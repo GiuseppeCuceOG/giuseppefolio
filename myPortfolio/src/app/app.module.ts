@@ -13,6 +13,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CursorComponent } from './cursor/cursor.component';
 import { InfoService } from './services/info.service';
+import { SkillsService } from './services/skills.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { InfoService } from './services/info.service';
     AppRoutingModule,
     MatGridListModule
   ],
-  providers: [InfoService],
+  providers: [InfoService, SkillsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

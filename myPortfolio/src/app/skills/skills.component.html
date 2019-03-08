@@ -1,3 +1,8 @@
 <div class="skills">
-  skills works!
+  <div class="skills-sector" *ngFor="let skill of skills">
+  	<h3 class="skills-sector-title">{{skill.title}}</h3>
+  	<div class="skills-sector-tech" *ngFor="let sk of skill.technology">
+  		<p class="skills-sector-tech-list">{{sk.skill}}</p>
+  	</div>
+  </div>
 </div>
