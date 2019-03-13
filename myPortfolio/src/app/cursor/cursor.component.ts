@@ -19,39 +19,29 @@ export class CursorComponent implements OnInit, AfterViewInit {
  
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   ngAfterViewInit() {
-  	this.cursor.nativeElement.style.position = "absolute";
-  	this.cursor.nativeElement.style.display = "none";
   	this.cursorOne.nativeElement.style.position = "absolute";
-  	this.cursorOne.nativeElement.style.display = "none";
   	this.cursorTwo.nativeElement.style.position = "absolute";
-  	this.cursorTwo.nativeElement.style.display = "none";
     this.cursorThree.nativeElement.style.position = "absolute";
-  	this.cursorThree.nativeElement.style.display = "none";  	
   	this.cursorList.nativeElement.style.position = "absolute";
-  	this.cursorList.nativeElement.style.display = "none";	
+  	this.cursorList.nativeElement.style.display = "none"; 
   }
 
   @HostListener('mousemove') trackCursor() {
   	this.pos = window.event;
-  	this.x = this.pos.pageX;
-  	this.y = this.pos.pageY;
-  	this.cursor.nativeElement.style.display = "block";
-  	this.cursorOne.nativeElement.style.display = "block";
+  	this.x = this.pos.screenX;
+  	this.y = this.pos.screenY;
   	this.cursorOne.nativeElement.style.marginLeft = "-5px";
-  	this.cursorOne.nativeElement.style.marginTop = "-5px";
-  	this.cursorTwo.nativeElement.style.display = "block";
-  	this.cursorTwo.nativeElement.style.marginLeft = "2px";
-  	this.cursorTwo.nativeElement.style.marginTop = "2.5px";
-  	this.cursorThree.nativeElement.style.display = "block";
+  	this.cursorOne.nativeElement.style.marginTop = "-25.5px";
+  	this.cursorTwo.nativeElement.style.marginLeft = "1.5px";
+  	this.cursorTwo.nativeElement.style.marginTop = "-18px";
   	this.cursorThree.nativeElement.style.marginLeft = "-9px";
-  	this.cursorThree.nativeElement.style.marginTop = "-9px";
+  	this.cursorThree.nativeElement.style.marginTop = "-29.5px";
   	this.cursorList.nativeElement.style.display = "block";
-  	this.cursorList.nativeElement.style.top = (this.y - 10) + "px";
-  	this.cursorList.nativeElement.style.left = (this.x - 10) + "px";
+  	this.cursorList.nativeElement.style.top = (this.y - 78) + "px";
+  	this.cursorList.nativeElement.style.left = (this.x - 8) + "px";
   }
 
   @HostListener('click') speedUp() {

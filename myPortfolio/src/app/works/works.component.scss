@@ -1,5 +1,6 @@
 .works {
-	margin-left: 19.5em;
+	margin-left: 17em;
+	margin-right: 2em;
 
 	&-link {
 		color: #222;
@@ -7,14 +8,16 @@
 
 	&-list {
 
+		width: 100%;
+
 		&-information {
 
 			position: relative;
-			max-width: 80%;
 			height: 150px;
 			background-size: 100%;
 			z-index: 1;
 			transition: .9s;
+			filter: saturate(.7);
 			
 			&-text {
 
@@ -35,9 +38,9 @@
 				right: 0;
 				transition: .6s;
 
-				&-title, &-description, &-tech, &-company {
-					margin-left: 2em;
-				}	
+				&-title, &-description, &-tech {
+					margin-left: 1em;
+				}
 			}
 
 			&:hover {
@@ -47,8 +50,8 @@
 
 				.works-list-information-text {
 
-					width: 95%;
-					left: 5%;
+					width: 100%;
+					left: 0%;
 				}
 			}
 		}
@@ -57,32 +60,40 @@
 
 .one {
 	background-image: url("../../assets/images/image1.png");
+	background-repeat: no-repeat;
 }
 
 .two {
 	background-image: url("../../assets/images/image2.png");
+	background-repeat: no-repeat;
 }
 
 .three {
 	background-image: url("../../assets/images/image3.png");
+	background-repeat: no-repeat;
 }
 
 .four {
 	background-image: url("../../assets/images/image4.png");
+	background-repeat: no-repeat;
 }
 
 .five {
 	background-image: url("../../assets/images/image5.png");
+	background-repeat: no-repeat;
 }
 
 .six {
 	background-image: url("../../assets/images/image6.png");
+	background-repeat: no-repeat;
 }
 
 .seven {
 	background-image: url("../../assets/images/image7.png");
+	background-repeat: no-repeat;
 }
 
 .eight {
 	background-image: url("../../assets/images/image8.png");
+	background-repeat: no-repeat;
 }

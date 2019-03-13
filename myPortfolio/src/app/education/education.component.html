@@ -1,0 +1,9 @@
+<div class="education">
+	<h2 class="education-title">Education</h2>
+	<div class="education-sector" *ngFor="let edu of education">
+	  	<h3 class="education-sector-school">{{ edu.school }}</h3>
+	  	<p class="education-sector-date"> {{ edu.startDate }} - {{ edu.endDate }}</p>
+	  	<p class="education-sector-description">{{ edu.description }}</p>
+	</div>
+</div>
+

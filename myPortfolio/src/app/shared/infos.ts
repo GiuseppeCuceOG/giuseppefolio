@@ -20,7 +20,7 @@ export const INFOS: Info[] = [
 	{
 		image: 'three',
 		title: 'Flappy Game',
-		description: 'Browser flappy game like, press Key up and Key down to interact with the game, (Yes you must play it!)',
+		description: 'Browser flappy game like, press Key Up and Key Down to interact with the game',
 		technologies: 'Html, Css, Javascript',
 		company: 'Drama Queen Communications',
 		link: 'https://giuseppecuceog.github.io/flappygame/'
