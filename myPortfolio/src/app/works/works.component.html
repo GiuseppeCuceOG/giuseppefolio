@@ -1,7 +1,12 @@
-<div class="works">
+<div class="works"
+[ngStyle.gt-xs]="{
+	'margin-left': '17em',
+	'margin-right': '2em'
+}">
 	<div class="works-list" *ngFor="let i of info">
 		<a href="{{i.link}}" target="_blank" class="works-link">
-			<div class="works-list-information {{i.image}}">
+			<div class="works-list-information {{i.image}}"
+			[ngStyle.xs]="{'height': '113px'}">
 				<div class="works-list-information-text">
 					<h3 class="works-list-information-text-title">{{i.title}}</h3>
 					<p class="works-list-information-text-description">{{i.description}}</p>

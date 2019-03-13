@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./src/styles/fonts";
+
+@font-face {
+	font-family: rezfont;
+	src: url($rez-path) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
 	background-color: #131313;

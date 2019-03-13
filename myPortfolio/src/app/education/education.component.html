@@ -1,4 +1,4 @@
-<div class="education">
+<div class="education" [ngStyle.gt-xs]="{'margin-left': '19em'}">
 	<h2 class="education-title">Education</h2>
 	<div class="education-sector" *ngFor="let edu of education">
 	  	<h3 class="education-sector-school">{{ edu.school }}</h3>

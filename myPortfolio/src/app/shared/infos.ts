@@ -4,14 +4,14 @@ export const INFOS: Info[] = [
 	{
 		image: 'five',
 		title: 'Seat Selection Finnair Web Page',
-		description: 'Restyling of the existing Seat Selection page',
+		description: 'Restyling of Seat Selection page',
 		technologies: 'Mustache, Sass, Javascript',
 		company: 'Frantic',
 		link: 'https://www.finnair.com/fi/gb/flights/travel-extras/additional-baggage-select-your-seat-more/select-your-seat'
 	},
 	{
 		image: 'six',
-		title: 'SuomiSelostaa Finnair Web Page',
+		title: 'SuomiSelostaa Finnair Landing Page',
 		description: 'Landing page created for Finnair',
 		technologies: 'Mustache, Sass, Javascript',
 		company: 'Frantic',
@@ -20,7 +20,7 @@ export const INFOS: Info[] = [
 	{
 		image: 'three',
 		title: 'Flappy Game',
-		description: 'Browser flappy game like, press Key Up and Key Down to interact with the game',
+		description: 'Browser game, press Key Up and Key Down to play',
 		technologies: 'Html, Css, Javascript',
 		company: 'Drama Queen Communications',
 		link: 'https://giuseppecuceog.github.io/flappygame/'
@@ -28,7 +28,7 @@ export const INFOS: Info[] = [
 	{
 		image: 'one',
 		title: 'Benny\'s Trading',
-		description: 'Entire Front End side built by me',
+		description: 'Front End side built by me',
 		technologies: 'Html, Css, Javascript',
 		company: 'Drama Queen Communications',
 		link: 'http://bennystrading.com/veneet/venevalitys'
@@ -44,7 +44,7 @@ export const INFOS: Info[] = [
 	{
 		image: 'seven',
 		title: 'Map of Italy with D3',
-		description: 'Exploring the potential of D3 in Data Visualization, in this map, every circle corresponds to a city, the bigger the circle, more people live in that specific city',
+		description: 'Exploring Data Visualization, here, every circle corresponds to a city, the bigger the circle, more people live in that city',
 		technologies: 'Html, Css, D3',
 		company: 'None',
 		link: 'https://giuseppecuceog.github.io/graph/'

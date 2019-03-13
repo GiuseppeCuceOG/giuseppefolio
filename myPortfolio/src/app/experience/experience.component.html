@@ -1,4 +1,4 @@
-<div class="experience">
+<div class="experience" [ngStyle.gt-xs]="{'margin-left': '19em'}">
 	<h2 class="experience-title">Experience</h2>
 	<div class="experience-sector" *ngFor="let exp of experience">
 		<h3 class="experience-sector-role">{{ exp.role }}</h3>
