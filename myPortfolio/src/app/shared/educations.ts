@@ -5,7 +5,7 @@ export const EDUCATIONS: Education[] = [
 		school: 'The Honk Kong University of Science and Technology, Coursera.',
 		startDate: 'October 2017',
 		endDate: 'Now',
-		description: 'Full Stack Web and Multiplatform Mobile App Development: FrontEnd Web UI Frameworks and Tools: Bootstrap 4 FrontEnd Javascript Frameworks: Angular Multiplatform Mobile App Development: Ionic and Cordova Multiplaform Mobile App Development with native Typescript Server-Side DEvelopment with NodeJS Express and Mongo DB.',		
+		description: 'Full Stack Web and Multiplatform Mobile App Development: FrontEnd Web UI Frameworks and Tools: Bootstrap 4 FrontEnd Javascript Frameworks: Angular Multiplatform Mobile App Development: Ionic and Cordova Multiplaform Mobile App Development with native Typescript Server-Side Development with NodeJS Express and Mongo DB.',		
 	},
 	{
 		school: 'John Hopkins University, Coursera.',

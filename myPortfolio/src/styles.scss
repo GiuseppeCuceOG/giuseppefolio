@@ -4,8 +4,37 @@
 @font-face {
 	font-family: rezfont;
 	src: url($rez-path) format('truetype');
-	font-weight: normal;
-	font-style: normal;
+}
+
+@font-face {
+	font-family: decterm;
+	src: url($decterm-path) format('truetype');
+}
+
+@font-face {
+	font-family: tcm;
+	src: url($tcm-path) format('truetype');
+}
+
+@font-face {
+	font-family: typografica;
+	src: url($typogra-path) format('opentype');
+}
+
+@font-face {
+	font-family: brokenmachine;
+	src: url($brokenmachine-path) format('truetype');
+}
+
+@font-face {
+	font-family: doublebubble;
+	src: url($doublebubble-path) format('opentype');
+}
+
+@font-face {
+	font-family: running;
+	src: url($running-path) format('truetype');
+	src: url($running-path-two) format('truetype');
 }
 
 body {

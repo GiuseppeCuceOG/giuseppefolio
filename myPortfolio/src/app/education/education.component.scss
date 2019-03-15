@@ -1,8 +1,21 @@
 .education {
-	color: white;
 	width: 60%;
+	font-family: tcm;
 
+	&-sector {
+		border: 3px solid rgba(54,145,164,1);
+		border-radius: 10px;
+		background-image: linear-gradient(90deg, rgba(94,185,204,1), rgba(94,237,204,.8));
+		margin: .5em 0 .5em 0;
+		padding: .05em 1em;
+		font-size: 1.1em;		
+		color: #000;
+	}
+	
 	&-title {
 		margin-top: 0;
+		padding-top: 1em;
+		font-size: 2em;
+		color: #eee;
 	}
 }

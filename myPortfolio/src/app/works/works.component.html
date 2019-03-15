@@ -7,7 +7,7 @@
 		<a href="{{i.link}}" target="_blank" class="works-link">
 			<div class="works-list-information {{i.image}}"
 			[ngStyle.xs]="{'height': '113px'}">
-				<div class="works-list-information-text">
+				<div fxLayout="column" fxLayoutAlign="space-evenly" class="works-list-information-text">
 					<h3 class="works-list-information-text-title">{{i.title}}</h3>
 					<p class="works-list-information-text-description">{{i.description}}</p>
 					<p class="works-list-information-text-tech">Technologies: {{i.technologies}}</p>
