@@ -2,7 +2,7 @@ import { Experience } from './experience';
 
 export const EXPERIENCES: Experience[] = [
 	{
-		role: 'Trainee FrontEnd Develoeper',
+		role: 'Trainee FrontEnd Developer',
 		company: 'Frantic',
 		location: 'Helsinki, Finland',
 		startDate: 'March 2018',
@@ -10,15 +10,15 @@ export const EXPERIENCES: Experience[] = [
 		description: 'Using the Custom CMS for Developing, Updating and Maintenance of the Finnair website, Creating landing pages, Newsletters and fixing bugs. Technology used are Sass Mustache Javascript JQuery GIT. I was also part of the Frantic GITHUB group with the purposes of creating a usable style guide for Finnair website and for improving  the quality code.'
 	},
 	{
-		role: 'Intern FrontEnd Develoeper',
+		role: 'Intern FrontEnd Developer',
 		company: 'Drama Queen Communications',
 		location: 'Turku, Finland',
 		startDate: 'March 2017',
 		endDate: 'December 2017',
-		description: 'Making Responsive websites Most used tools are Angular 1.0, Sass, Javascript, PHP and My Sql.'
+		description: 'Making Responsive websites, technologies used were Angular 1.0, Sass, Javascript, PHP and My Sql.'
 	},
 	{
-		role: 'Graphic Designer/FrontEnd Develoeper',
+		role: 'Graphic Designer/FrontEnd Developer',
 		company: 'Bug Byte Ltd',
 		location: 'Turku, Finland',
 		startDate: 'May 2015',

@@ -25,12 +25,14 @@
 		width: 100%;
 		margin: 0 auto;
 		padding-top: 2em;
+		padding-bottom: 1em;
 
 		&-image {
 			width: 10em;
 			display: block;
   			margin-right: auto;
   			margin-left: auto;
+  			margin-bottom: 2em;
 			border-radius: 50%;
 			border: .5em solid #131313;
 			transition: filter .8s;
@@ -43,25 +45,37 @@
 		&-textcentered {
 			text-align: center;
 			font-family: brokenmachine;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			margin: .2em;
 		}
 
 		&-contact {
 			text-align: center;
-			margin-top: 2em;
 			font-family: tcm;
 
 			&-social {
-				border: 1px solid #2cc6d9;
-				padding: .5em 1em;
+				text-decoration: none;
+				color: #eee;
 				width: 60%;
-				margin: 0 auto;
-				margin-top: 1em;
+				transition: color 1s;
 
-				a {
-					text-decoration: none;
-					color: #eee;
+				&:hover {
+					color: #2cc6d9;
+				}
+
+				&-linkedin, &-github {
+					border: 1px solid #2cc6d9;
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 1.5em;
+					margin-bottom: .5em;
+					padding: .5em 1em;
+					transition: border 1s, background-color 1s;
+
+					&:hover {
+						border: 1px solid #eee;
+						background-color: #eee;
+					}
 				}
 			}
 		}
@@ -70,14 +84,27 @@
 	&-links {
 
 		text-align: center;
+		font-family: tcm;
+		margin: 1em 0;
+		margin: 0 auto;
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
 
 		&-toPage {
 			text-decoration: none;
-			color: #56ef5f;
+			color: #eee;
 			padding: .5em;
+			margin: 1em 1em;
+			border-bottom: 1px solid transparent;
+			border-top: 1px solid transparent;
+			transition: border-bottom .5s, border-top .5s;
 
 			&:hover {
-			//	cursor: none;
+				border-bottom: 1px solid #2cc6d9;
+				border-top: 1px solid #2cc6d9;
 			}
 		}	
 	}	

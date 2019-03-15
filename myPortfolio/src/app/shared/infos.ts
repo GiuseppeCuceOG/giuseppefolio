@@ -35,7 +35,7 @@ export const INFOS: Info[] = [
 	},
 	{
 		image: 'four',
-		title: 'Page Created with Angular 1',
+		title: 'Data Fetching',
 		description: 'Page built with Angular by fetching data from the Marvel API',
 		technologies: 'Html, Css, Angular 1',
 		company: 'None',
@@ -43,8 +43,8 @@ export const INFOS: Info[] = [
 	},
 	{
 		image: 'seven',
-		title: 'Map of Italy with D3',
-		description: 'Exploring Data Visualization, here, every circle corresponds to a city, the bigger the circle, more people live in that city',
+		title: 'Data Visualization with D3',
+		description: 'Here every circle corresponds to a city, the bigger the circle, more people live in that city',
 		technologies: 'Html, Css, D3',
 		company: 'None',
 		link: 'https://giuseppecuceog.github.io/graph/'

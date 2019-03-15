@@ -1,23 +1,23 @@
-<div class="profile" [ngStyle.xs]="{position: 'static', width: '100%', margin: '0 auto'}">
+<div class="profile" [ngStyle.xs]="{position: 'static', width: '100%', height: 'auto', margin: '0 auto'}">
 	<div class="profile-info">
 		<img class="profile-info-image" src="../../assets/images/peppe.jpg">
-  		<p class="profile-info-textcentered">Front End Developer</p>
-      <p class="profile-info-textcentered">Giuseppe Cuce</p>
-  		<div class="profile-links">
-  			<a class="profile-links-toPage" mat-button routerLink='/works'>Works</a>
-  			<a class="profile-links-toPage" mat-button routerLink='/skills'>Skills</a><br>
-        <a class="profile-links-toPage" mat-button routerLink='/experience'>Experience</a>
-        <a class="profile-links-toPage" mat-button routerLink='/education'>Education</a>
-  		</div>
-  		<div class="profile-info-contact">
-  			<p class="profile-info-contact-email">giuseppecuce.og@gmail.com</p>
-  			<p class="profile-info-contact-phone">+358 449771865</p>
-        <p class="profile-info-contact-social">
-  			 <a href="https://www.linkedin.com/in/giuseppecuce/" target="_blank">linkedin profile</a>
-        </p>
-  			<p  class="profile-info-contact-social">
-          <a href="https://github.com/GiuseppeCuceOG" target="_blank">github profile</a>
-        </p>
-  		</div>
+		<p class="profile-info-textcentered">Front End Developer</p>
+    <p class="profile-info-textcentered">Giuseppe Cuce</p>
+		<div class="profile-links" [ngStyle.gt-xs]="{width: '100%'}">
+			<p class="profile-links"><a class="profile-links-toPage" mat-button routerLink='/works'>Works</a></p>
+			<p class="profile-links"><a class="profile-links-toPage" mat-button routerLink='/skills'>Skills</a></p>
+      <p class="profile-links"><a class="profile-links-toPage" mat-button routerLink='/experience'>Experience</a></p>
+      <p class="profile-links"><a class="profile-links-toPage" mat-button routerLink='/education'>Education</a></p>
+		</div>
+		<div class="profile-info-contact">
+			<p class="profile-info-contact-email">giuseppecuce.og@gmail.com</p>
+			<p class="profile-info-contact-phone">+358 449771865</p>
+			<a class="profile-info-contact-social" href="https://www.linkedin.com/in/giuseppecuce/" target="_blank">
+        <p class="profile-info-contact-social-linkedin">linkedin profile<p>
+      </a>
+      <a class="profile-info-contact-social" href="https://github.com/GiuseppeCuceOG" target="_blank">
+        <p class="profile-info-contact-social-github">github profile<p>
+      </a>
+		</div>
 	</div>
 </div>
