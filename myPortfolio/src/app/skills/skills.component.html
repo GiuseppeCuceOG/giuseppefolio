@@ -2,8 +2,9 @@
 	<h2 class="skills-title">Skills</h2>
 	<div class="skills-sector" *ngFor="let skill of skills">
 	  	<h3 class="skills-sector-title">{{skill.title}}</h3>
-	  	<div class="skills-sector-tech" *ngFor="let sk of skill.technology">
-	  		<p class="skills-sector-tech-list">{{sk.skill}}</p>
+	  	<div class="skills-sector-tech"
+	  		*ngFor="let sk of skill.technology">
+	  		<p class="skills-sector-tech-list" #test>{{sk.skill}} {{sk.quality}}</p>
 	  	</div>
 	</div>
 </div>

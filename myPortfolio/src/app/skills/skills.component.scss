@@ -9,4 +9,21 @@
 		padding-top: 1em;
 		font-size: 2em;
 	}
+
+	&-sector {
+		margin-left: 1em;
+
+		&-title {
+			color: #2cc6d9;
+			font-size: 1.3em;
+		}
+
+		&-tech {
+			&-list {
+				font-size: 1.2em;
+				border: 1px solid #2cc6d9;
+    			padding: .5em;
+			}
+		}
+	}
 }

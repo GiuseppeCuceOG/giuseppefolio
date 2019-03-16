@@ -5,52 +5,68 @@ export const LISTSKILLS: listOfSkill[] = [
 		title: 'Technologies',
 		technology: [
 			{
-				skill: 'Html'
+				skill: 'Html',
+				quality: 4
 			},
 			{
-				skill: 'Css/Sass'
+				skill: 'Css/Sass',
+				quality: 4
 			},
 			{
-				skill: 'Bootstrap'
+				skill: 'Bootstrap',
+				quality: 2
 			},
 			{
-				skill: 'Javascript'
+				skill: 'Javascript',
+				quality: 4
 			},
 			{
-				skill: 'JQuery'
+				skill: 'JQuery',
+				quality: 4
 			},
 			{
-				skill: 'Typescript'
+				skill: 'Typescript',
+				quality: 3
 			},
 			{
-				skill: 'Angular'
+				skill: 'Angular',
+				quality: 3
 			},
 			{
-				skill: 'Ionic'
+				skill: 'Ionic',
+				quality: 3
 			},
 			{
-				skill: 'React'
+				skill: 'React',
+				quality: 1
 			},
 			{
-				skill: 'PHP'
+				skill: 'PHP',
+				quality: 2
 			},
 			{
-				skill: 'MySql'
+				skill: 'MySql',
+				quality: 2
 			},
 			{
-				skill: 'Custom CMS'
+				skill: 'Custom CMS',
+				quality: 3
 			},
 			{
-				skill: 'GIT'
+				skill: 'GIT',
+				quality: 3
 			},
 			{
-				skill: 'GitHub'
+				skill: 'GitHub',
+				quality: 3
 			},
 			{
-				skill: 'Photoshop'
+				skill: 'Photoshop',
+				quality: 4
 			},
 			{
-				skill: 'Zbrush'
+				skill: 'Zbrush',
+				quality: 2
 			}
 		]
 	},
@@ -58,13 +74,16 @@ export const LISTSKILLS: listOfSkill[] = [
 		title: 'Languages',
 		technology: [
 			{
-				skill: 'Italian'
+				skill: 'Italian',
+				quality: 5
 			},
 			{
-				skill: 'English'
+				skill: 'English',
+				quality: 5
 			},
 			{
-				skill: 'Finnish'
+				skill: 'Finnish',
+				quality: 2
 			}
 		]
 	}
