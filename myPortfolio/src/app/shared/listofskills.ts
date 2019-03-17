@@ -37,8 +37,8 @@ export const LISTSKILLS: listOfSkill[] = [
 				quality: 3
 			},
 			{
-				skill: 'React',
-				quality: 1
+				skill: 'Java',
+				quality: 2
 			},
 			{
 				skill: 'PHP',

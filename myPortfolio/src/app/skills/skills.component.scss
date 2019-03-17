@@ -22,7 +22,12 @@
 			&-list {
 				font-size: 1.2em;
 				border: 1px solid #2cc6d9;
+				//background-color: #2cc6d9;
     			padding: .5em;
+
+    			&-quality {
+    				float: right;
+    			}
 			}
 		}
 	}
