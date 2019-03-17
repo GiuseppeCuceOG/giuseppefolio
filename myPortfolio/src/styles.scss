@@ -32,6 +32,17 @@
 }
 
 @font-face {
+	font-family: blackboxone;
+	src: url($blackboxone-path) format('opentype');
+}
+
+
+@font-face {
+	font-family: hotelparis;
+	src: url($hotelparis-path) format('truetype');
+}
+
+@font-face {
 	font-family: running;
 	src: url($running-path) format('truetype');
 	src: url($running-path-two) format('truetype');

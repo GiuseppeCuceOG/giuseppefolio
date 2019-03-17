@@ -1,5 +1,5 @@
-<div class="education" [ngStyle.gt-xs]="{'margin-left': '19em', width: '60%'}">
-	<h2 class="education-title">Education</h2>
+<div class="education" [ngStyle.gt-xs]="{'margin-left': '19em', width: '50%'}">
+	<h2 class="education-title" [ngStyle.xs]="{'margin-left': '10px'}">Education</h2>
 	<div class="education-sector" *ngFor="let edu of education">
 	  	<h3 class="education-sector-school">{{ edu.school }}</h3>
 	  	<p class="education-sector-date"> {{ edu.startDate }} - {{ edu.endDate }}</p>

@@ -10,6 +10,23 @@
 		font-size: 2em;
 	}
 
+	&-legenda {
+		border-top: 1px solid #2cc6d9;
+		border-bottom: 1px solid #2cc6d9;
+		color: #eee;
+		padding: .6em;
+		font-size: .95em;
+		width: 50%;
+
+		h3 {
+			margin: initial;
+		}
+
+		p {
+			margin: .2em .5em; 
+		}
+	}
+
 	&-sector {
 		margin-left: 1em;
 

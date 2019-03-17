@@ -53,7 +53,7 @@ export const INFOS: Info[] = [
 		image: 'two',
 		title: 'Web Page created by studying with Codecademy',
 		description: 'Studying Front End Technology',
-		technologies: 'Html, Css, Javascript',
+		technologies: 'Html, Css',
 		company: 'None',
 		link: 'http://giuseppecuceog.github.io/graphicweb/Pages/Adoptly/'
 	},
@@ -61,7 +61,7 @@ export const INFOS: Info[] = [
 		image: 'eight',
 		title: 'Web Page created by studying with Codecademy',
 		description: 'Studying Front End Technology',
-		technologies: 'Html, Css, Javascript',
+		technologies: 'Html, Css',
 		company: 'None',
 		link: 'http://giuseppecuceog.github.io/graphicweb/Pages/Move/'
 
