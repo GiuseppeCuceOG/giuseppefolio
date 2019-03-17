@@ -1,0 +1,23 @@
+.experience {
+	width: 100%;
+	font-family: tcm;
+
+	&-sector {
+		border-top: 1px solid rgba(54,145,164,1);
+		margin: .3em 0 .3em 0;
+		padding: .05em 1em;
+		font-size: 1.1em;
+		color: #eee;
+
+		&-role {
+			color: #2cc6d9;
+		}
+	}
+
+	&-title {
+		margin-top: 0;
+		padding-top: 1em;
+		font-size: 2em;
+		color: #eee;
+	}
+}

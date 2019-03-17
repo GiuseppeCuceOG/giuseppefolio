@@ -1,0 +1,51 @@
+.skills {
+	margin: 0;
+	color: #eee;
+	font-size: 1.1em;
+	font-family: tcm;
+
+	&-title {
+		margin-top: 0;
+		padding-top: 1em;
+		font-size: 2em;
+	}
+
+	&-legenda {
+		border-top: 1px solid #2cc6d9;
+		border-bottom: 1px solid #2cc6d9;
+		color: #eee;
+		padding: .6em;
+		font-size: .95em;
+		width: 50%;
+
+		h3 {
+			margin: initial;
+		}
+
+		p {
+			margin: .2em .5em; 
+		}
+	}
+
+	&-sector {
+		margin-left: 1em;
+
+		&-title {
+			color: #2cc6d9;
+			font-size: 1.3em;
+		}
+
+		&-tech {
+			&-list {
+				font-size: 1.2em;
+				border: 1px solid #2cc6d9;
+				//background-color: #2cc6d9;
+    			padding: .5em;
+
+    			&-quality {
+    				float: right;
+    			}
+			}
+		}
+	}
+}

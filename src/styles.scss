@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./src/styles/fonts";
+
+@font-face {
+	font-family: rezfont;
+	src: url($rez-path) format('truetype');
+}
+
+@font-face {
+	font-family: decterm;
+	src: url($decterm-path) format('truetype');
+}
+
+@font-face {
+	font-family: tcm;
+	src: url($tcm-path) format('truetype');
+}
+
+@font-face {
+	font-family: typografica;
+	src: url($typogra-path) format('opentype');
+}
+
+@font-face {
+	font-family: brokenmachine;
+	src: url($brokenmachine-path) format('truetype');
+}
+
+@font-face {
+	font-family: doublebubble;
+	src: url($doublebubble-path) format('opentype');
+}
+
+@font-face {
+	font-family: blackboxone;
+	src: url($blackboxone-path) format('opentype');
+}
+
+
+@font-face {
+	font-family: hotelparis;
+	src: url($hotelparis-path) format('truetype');
+}
+
+@font-face {
+	font-family: running;
+	src: url($running-path) format('truetype');
+	src: url($running-path-two) format('truetype');
+}
+
+body {
+	background-color: #131313;
+  	padding: 0; 
+  	margin: 0;
+
+  	::selection {
+  		background-color: #fb4;
+  	}
+}

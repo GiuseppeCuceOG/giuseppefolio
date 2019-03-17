@@ -1,0 +1,18 @@
+<div class="skills"  [ngStyle.gt-xs]="{'margin-left': '19em'}">
+	<h2 class="skills-title" [ngStyle.xs]="{'margin-left': '10px'}">Skills</h2>
+	<div class="skills-legenda" [ngStyle.xs]="{'margin-left': '10px'}">
+		<h3>Legend</h3>
+		<p>1- Better not to ask</p>
+		<p>2- Need more practice</p>
+		<p>3- I can work with it</p>
+		<p>4- Feeling confidence about</p>
+		<p>5- Supreme God</p>
+	</div>
+	<div class="skills-sector" *ngFor="let skill of skills">
+	  	<h3 class="skills-sector-title">{{skill.title}}</h3>
+	  	<div class="skills-sector-tech"
+	  		*ngFor="let sk of skill.technology">
+	  		<p class="skills-sector-tech-list">{{sk.skill}} <span class="skills-sector-tech-list-quality">{{sk.quality}}</span></p>
+	  	</div>
+	</div>
+</div>
