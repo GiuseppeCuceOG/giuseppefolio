@@ -35,11 +35,6 @@
   			margin-bottom: 2em;
 			border-radius: 50%;
 			border: .5em solid #131313;
-			transition: filter .8s;
-
-			&:hover {
-				filter: sepia(0%) blur(0px);
-			}
 		}
 
 		&-textcentered {
@@ -111,5 +106,6 @@
 }
 
 .active {
-	color: red;
+	border-bottom: 1px solid #2cc6d9;
+	border-top: 1px solid #2cc6d9;
 }
