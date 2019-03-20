@@ -30,8 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit{
 
   @HostListener('mousemove') trackCursor() {
   	this.pos = window.event;
-  	this.x = this.pos.screenX;
-  	this.y = this.pos.screenY;
+  	this.x = this.pos.clientX;
+  	this.y = this.pos.clientY;
   	this.cursorOne.nativeElement.style.marginLeft = "-5px";
   	this.cursorOne.nativeElement.style.marginTop = "-25.5px";
   	this.cursorTwo.nativeElement.style.marginLeft = "1.5px";
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   	this.cursorThree.nativeElement.style.marginLeft = "-9px";
   	this.cursorThree.nativeElement.style.marginTop = "-29.5px";
   	this.cursorList.nativeElement.style.display = "block";
-  	this.cursorList.nativeElement.style.top = (this.y - 78) + "px";
+  	this.cursorList.nativeElement.style.top = (this.y - 8) + "px";
   	this.cursorList.nativeElement.style.left = (this.x - 8) + "px";
   }
 

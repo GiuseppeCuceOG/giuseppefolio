@@ -4,7 +4,7 @@
 	'margin-right': '2em'
 }">
 	<div class="works-list" *ngFor="let i of info">
-		<a href="{{i.link}}" target="_blank" class="works-link" [ngStyle]="{'cursor': 'none'}">
+		<a href="{{i.link}}" target="_blank" class="works-link" [ngStyle.xs]="{'cursor': 'default'}" [ngStyle.gt-xs]="{'cursor': 'none'}">
 			<div class="works-list-information {{i.image}}"
 			[ngStyle.xs]="{'height': '113px'}">
 				<div fxLayout="column" fxLayoutAlign="space-evenly" class="works-list-information-text">
