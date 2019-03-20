@@ -6,3 +6,121 @@
 	max-width: 960px;
 	margin: 0 auto;
 }
+
+.screen {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	
+
+	&-cursorList {
+		width: 20px;
+		height: 20px;
+	}
+
+	&-cursor {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+  		border: 1px solid transparent;	
+  		border-bottom-color: #fc5;
+  		border-left-color: #fc5;
+  		animation: rotate 2s linear infinite reverse;	
+	}
+
+	&-cursorOne {
+		width: 22px;
+		height: 22px;
+		z-index: 99;
+		border: 4px solid transparent;
+		border-bottom-color: #fa5;
+		border-left-color: #fa5;
+		border-radius: 50%;
+		opacity: .5;
+		animation: rotate 4s infinite;
+		animation-timing-function: cubic-bezier(0.1,0.9,1,0.8);
+	}
+
+	&-cursorTwo {
+		width: 12px;
+		height: 12px;
+		z-index: 98;
+		border: 2px solid transparent;
+		border-bottom-color: #fb5;
+		border-right-color: #fb5;
+		border-radius: 50%;
+		opacity: .15;
+		animation: rotate 4s linear infinite alternate;
+	}
+
+	&-cursorThree {
+		width: 34px;
+		height: 34px;
+		z-index: 97;
+		border: 2px solid transparent;
+		border-bottom-color: #fb5;
+		border-left-color: #fb5;
+		border-radius: 50%;
+		opacity: .8;
+		animation: rotate 3s ease-in-out infinite reverse;
+	}	
+}
+
+.speedUp {
+	animation: rotateFast .2s linear infinite;
+	animation-delay: -1s;
+}
+
+.speedUpReverse {
+	animation: rotateFast .4s ease-out infinite reverse;
+}
+
+.expand {
+	animation: expand 2s ease-out;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes expand {
+	0% {
+		transform: scale(1);
+		border-bottom-color: #0dc9ef;
+		border-right-color: #0dc9ef;
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+		border-bottom-color: #0dc9ef;
+		border-right-color: #0dc9ef;
+	}
+}
+
+@keyframes rotateFast {
+	0% {
+		transform: rotate(0deg);
+		border-bottom-color: #0dc9ef;
+		border-left-color: #0dc9ef;
+	}
+	50% {
+		border-bottom-color: #0fb1f7;
+		border-left-color: #0fb1f7;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-bottom-color: #0562c8;
+		border-left-color: #0562c8;
+	}
+}

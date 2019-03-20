@@ -11,7 +11,6 @@ import { WorksComponent } from './works/works.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-import { CursorComponent } from './cursor/cursor.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -26,7 +25,6 @@ import { EducationService } from './services/education.service';
     ProfileComponent,
     WorksComponent,
     SkillsComponent,
-    CursorComponent,
     ExperienceComponent,
     EducationComponent
   ],

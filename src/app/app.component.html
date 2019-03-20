@@ -1,6 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<!--<app-cursor></app-cursor>-->
 <div class="container">
 	<app-profile></app-profile>
 	<router-outlet></router-outlet>
+	<!--  **Custom Cursor** -->
+	<div class="screen">
+		<div #cursorList class="screen-cursorList">
+			<div #cursor class="screen-cursor"></div>
+			<div #cursorOne class="screen-cursorOne"></div>
+			<div #cursorTwo class="screen-cursorTwo"></div>
+			<div #cursorThree class="screen-cursorThree"></div>
+		</div>
+	</div>
 </div>
