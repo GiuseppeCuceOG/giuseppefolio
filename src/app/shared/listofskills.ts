@@ -14,7 +14,7 @@ export const LISTSKILLS: listOfSkill[] = [
 			},
 			{
 				skill: 'Bootstrap',
-				quality: 2.5
+				quality: 3
 			},
 			{
 				skill: 'Javascript',
