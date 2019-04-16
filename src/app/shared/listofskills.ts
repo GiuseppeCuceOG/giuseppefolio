@@ -29,9 +29,13 @@ export const LISTSKILLS: listOfSkill[] = [
 				quality: 3
 			},
 			{
-				skill: 'Angular',
+				skill: 'Angular v6',
 				quality: 3
 			},
+			{
+				skill: 'AngularJS',
+				quality: 3
+			},			
 			{
 				skill: 'Ionic',
 				quality: 3
@@ -54,7 +58,7 @@ export const LISTSKILLS: listOfSkill[] = [
 			},
 			{
 				skill: 'GIT',
-				quality: 3
+				quality: 3.5
 			},
 			{
 				skill: 'GitHub',
