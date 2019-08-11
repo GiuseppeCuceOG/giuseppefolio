@@ -2,13 +2,22 @@ import { Experience } from './experience';
 
 export const EXPERIENCES: Experience[] = [
 	{
+		role: 'Web Developer',
+		company: 'Elido',
+		location: 'Kerava, Finland',
+		flag: '../assets/images/finlandrect.png',
+		startDate: 'June 2019',
+		endDate: 'Now',
+		description: 'Creating websites using Drupal as CMS and the FrontEnd stack Html, Css, JQuery'
+	},
+	{
 		role: 'Trainee FrontEnd Developer',
 		company: 'Frantic',
 		location: 'Helsinki, Finland',
 		flag: '../assets/images/finlandrect.png',
 		startDate: 'March 2018',
 		endDate: 'September 2018',
-		description: 'Using the Custom CMS for Developing, Updating and Maintenance of the Finnair website, Creating landing pages, Newsletters and fixing bugs. Technology used are Sass Mustache Javascript JQuery GIT. I was also part of the Frantic GITHUB group with the purposes of creating a usable style guide for Finnair website and for improving  the quality code.'
+		description: 'Using the Custom CMS for Developing, Updating and Maintenance of the Finnair website, Creating landing pages, Newsletters and fixing bugs. Technology used are Sass Mustache Javascript JQuery GIT. I was also part of the Frantic GITHUB group with the purposes of creating a usable style guide for Finnair website and for improving the quality code.'
 	},
 	{
 		role: 'Intern FrontEnd Developer',

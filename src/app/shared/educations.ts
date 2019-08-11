@@ -4,9 +4,15 @@ export const EDUCATIONS: Education[] = [
 	{
 		school: 'The Honk Kong University of Science and Technology, Coursera.',
 		startDate: 'October 2017',
-		endDate: 'Now',
+		endDate: 'June 2019',
 		description: 'Full Stack Web and Multiplatform Mobile App Development: FrontEnd Web UI Frameworks and Tools: Bootstrap 4, FrontEnd Javascript Frameworks: Angular, Multiplatform Mobile App Development: Ionic and Cordova, Multiplaform Mobile App Development with NativeScript, Server-Side Development with NodeJS Express and Mongo DB.',		
 	},
+	{
+		school: 'Duke University',
+		startDate: 'December 2018',
+		endDate: 'Now',
+		description: 'Programming Foundations with JavaScript, HTML and CSS Java Programming: Solving Problems with Software, Arrays, Lists, and Structured Data, Principles of Software Design, Build a Recommendation System',
+	},	
 	{
 		school: 'John Hopkins University, Coursera.',
 		startDate: 'March 2016',
