@@ -87,11 +87,11 @@ export const LISTSKILLS: listOfSkill[] = [
 		technology: [
 			{
 				skill: 'Italian',
-				quality: 5
+				quality: 4.5
 			},
 			{
 				skill: 'English',
-				quality: 5
+				quality: 4.5
 			},
 			{
 				skill: 'Finnish',
