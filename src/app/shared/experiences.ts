@@ -8,7 +8,7 @@ export const EXPERIENCES: Experience[] = [
 		flag: '../assets/images/finlandrect.png',
 		startDate: 'June 2019',
 		endDate: 'Now',
-		description: 'Creating websites using Drupal as CMS and the FrontEnd stack Html, Css, JQuery'
+		description: 'Creating websites using Drupal or Wordpress as CMS and the FrontEnd stack Html, Css, JQuery and MySql, PHP as BackEnd Stack. Creating ECommerce sites using WooCommerce and custom theme for Wordpress.'
 	},
 	{
 		role: 'Trainee FrontEnd Developer',

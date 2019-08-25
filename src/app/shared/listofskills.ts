@@ -50,7 +50,7 @@ export const LISTSKILLS: listOfSkill[] = [
 			},
 			{
 				skill: 'PHP',
-				quality: 2
+				quality: 3
 			},
 			{
 				skill: 'MySql',
@@ -63,7 +63,15 @@ export const LISTSKILLS: listOfSkill[] = [
 			{
 				skill: 'Drupal',
 				quality: 3
-			},			
+			},
+			{
+				skill: 'Wordpress',
+				quality: 3
+			},
+			{
+				skill: 'WooCommerce',
+				quality: 3
+			},		
 			{
 				skill: 'GIT',
 				quality: 3.5
