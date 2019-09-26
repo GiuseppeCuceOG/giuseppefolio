@@ -2,16 +2,22 @@ import { Education } from './education';
 
 export const EDUCATIONS: Education[] = [
 	{
-		school: 'Duke University',
-		startDate: 'December 2018',
-		endDate: 'Now',
-		description: 'Programming Foundations with JavaScript, HTML and CSS Java Programming: Solving Problems with Software, Arrays, Lists, and Structured Data, Principles of Software Design, Build a Recommendation System',
+		school: 'The Honk Kong University of Science and Technology, Coursera.',
+		startDate: 'August 2019',
+		endDate: 'now',
+		description: 'Full Stack Web Development with React Specialization: FrontEnd Web UI Frameworks and Tools: Bootstrap 4, FrontEnd Web Development with React, Multiplatform Mobile App Development with React Native, Server-Side Development with NodeJS Express and Mongo DB.',		
 	},
 	{
 		school: 'The Honk Kong University of Science and Technology, Coursera.',
 		startDate: 'October 2017',
 		endDate: 'June 2019',
-		description: 'Full Stack Web and Multiplatform Mobile App Development: FrontEnd Web UI Frameworks and Tools: Bootstrap 4, FrontEnd Javascript Frameworks: Angular, Multiplatform Mobile App Development: Ionic and Cordova, Multiplaform Mobile App Development with NativeScript, Server-Side Development with NodeJS Express and Mongo DB.',		
+		description: 'Full Stack Web and Multiplatform Mobile App Development: FrontEnd Web UI Frameworks and Tools: Bootstrap 4, FrontEnd Javascript Frameworks: Angular, Multiplatform Mobile App Development: Ionic and Cordova, Server-Side Development with NodeJS Express and Mongo DB.',		
+	},
+	{
+		school: 'Duke University',
+		startDate: 'December 2018',
+		endDate: 'December 2018',
+		description: 'Programming Foundations with JavaScript, HTML and CSS',
 	},	
 	{
 		school: 'John Hopkins University, Coursera.',
