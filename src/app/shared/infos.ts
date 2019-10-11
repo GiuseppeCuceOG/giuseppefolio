@@ -2,6 +2,14 @@ import { Info } from './info';
 
 export const INFOS: Info[] = [
 	{
+		image: 'nine',
+		title: 'Calculator',
+		description: '',
+		technologies: 'Html, Css, Javascript',
+		company: 'Personal Project',
+		link: 'https://giuseppecuceog.github.io/calculator/'
+	},
+	{
 		image: 'five',
 		title: 'Seat Selection Finnair Web Page',
 		description: 'Restyling of Seat Selection page',
